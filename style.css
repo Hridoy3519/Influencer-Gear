@@ -1,0 +1,84 @@
+/* Common Utilities */
+:root {
+    --primary-text-color: #3A3A3A;
+    --primary-btn-color: #E02C6D;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 0 120px;
+}
+
+.customized-btn {
+    background-color: var(--primary-btn-color);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 24px;
+    display: inline-block;
+}
+
+.btn-rounded {
+    border-radius: 41px;
+}
+
+/* Banner Styles */
+.banner {
+    display: flex;
+}
+
+.banner-des {
+    max-width: 582px;
+}
+
+.banner-des h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 70px;
+    color: var(--primary-text-color);
+    margin-bottom: 0;
+}
+
+.banner-des p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-text-color);
+}
+
+.banner-img {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 680px) {
+    .container {
+        padding: 0;
+    }
+
+    .banner {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .banner-des h1 {
+        font-size: 2em;
+    }
+
+    .banner-img {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .banner-img img {
+        width: 95%;
+    }
+}
