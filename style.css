@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
 .container {
@@ -30,6 +31,12 @@ body {
 /* Banner Styles */
 .banner {
     display: flex;
+    overflow: hidden;
+}
+
+.banner:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .banner-des {
@@ -57,11 +64,21 @@ body {
     justify-content: flex-end;
 }
 
+.banner-img:hover {
+    transform: rotate(360deg);
+    transition: 0.7s;
+}
+
+
 /* Media Queries */
 
 @media only screen and (max-width: 680px) {
     .container {
         padding: 0;
+    }
+
+    .banner:hover {
+        transform: none;
     }
 
     .banner {
