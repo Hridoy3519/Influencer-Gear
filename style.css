@@ -250,4 +250,18 @@ main {
         grid-column-gap: 30px;
         grid-row-gap: 30px;
     }
+
+    .feature-products {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature-products .feature-img,
+    .feature-img img {
+        width: 100%;
+    }
+
+    .feature-des h2 {
+        font-size: 1.25rem;
+    }
 }
